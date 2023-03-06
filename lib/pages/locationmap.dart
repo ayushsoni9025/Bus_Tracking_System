@@ -19,7 +19,7 @@ Map mapResponse = <String, String>{};
 class _LocationMapState extends State<LocationMap> {
   Future apicall() async{
     http.Response response;
-    response=await http.get(Uri.parse("https://api.thingspeak.com/channels/2052261/feeds.json?api_key=AHM25YZIK5DDOGME&results=2"));
+    response=await http.get(Uri.parse("https://api.thingspeak.com/channels/2052261/feeds.json?api_key=add your api key of thinkspeak &results=2"));
     if(response.statusCode == 200){
 
       setState((){
